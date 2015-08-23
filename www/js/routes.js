@@ -25,6 +25,17 @@ app
       }
     }
   })
+  .state('app.utilisateurAjouter', {
+    url: '/utilisateur/ajouter',
+    views: {
+      'menuContent': {
+        templateUrl: 'comp/utilisateur-ajouter/utilisateur-ajouter-tpl.html',
+        controller: 'utilisateurAjouterCtrl'
+      }
+    }
+  })
+  
+
 ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/contenus');

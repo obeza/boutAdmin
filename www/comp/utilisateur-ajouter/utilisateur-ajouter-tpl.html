@@ -1,0 +1,58 @@
+<ion-view view-title="Utilisateur">
+
+  <ion-content>
+    
+
+
+
+<div class="card">
+  <div class="item item-divider">
+    <h2>Ajouter un utilisateur</h2>
+  </div>
+  <div class="item item-text-wrap">
+	<div class="list">
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label"><b>Nom</b></span>
+	    <input type="text" placeholder="Nom & prénom" ng-model="form.nom">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label"><b>Email</b></span>
+	    <input type="email" placeholder="contact@mail.com" ng-model="form.email">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label"><b>tel</b></span>
+	    <input type="text" placeholder="0696123456" ng-model="form.tel">
+	  </label>
+		
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label"><b>boutique ID</b></span>
+	    <input type="number" placeholder="boutique ID" ng-model="form.boutiqueId">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label"><b>Mot de passe</b></span>
+	    <input type="text" placeholder="*********" ng-model="form.passe">
+	  </label>
+		<label class="item item-input item-select">
+		    <div class="input-label">
+		      <b>Statut</b>
+		    </div>
+		    <select ng-model="form.statut">
+		      <option value="-1">Désactivé</option>
+		      <option value="1">Utilisateur</option>
+		      <option value="2">Admin</option>
+		    </select>
+  		</label>
+	</div>
+  </div>
+  <div class="item">
+	<button ng-click="ajouter()" class="button button-block button-assertive">
+	  Ajouter
+	</button>
+  </div>
+</div>
+
+
+
+
+  </ion-content>
+</ion-view>
